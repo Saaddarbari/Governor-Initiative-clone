@@ -1,3 +1,6 @@
+import Image from 'next/image'
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <main>
@@ -35,7 +38,7 @@ export default function Home() {
               </span>
             </div>
             <div className="relative  mt-7 flex  w-full items-end justify-center md:m-auto md:justify-end">
-              <img
+              <Image
                 alt="Kamrantessori"
                 loading="lazy"
                 width="1600"
@@ -44,7 +47,7 @@ export default function Home() {
                 data-nimg="1"
                 className=" md: ml-40 h-auto min-w-[900px] lg:w-[600px]"
                 src="/kamran.png"
-              ></img>
+             />
             </div>
           </div>
         </div>
@@ -73,7 +76,7 @@ export default function Home() {
           </p>
 
           <div className="grid sm:grid-cols-3 grid-cols-1 gap-5 mt-10 m-3 sm:m-0">
-            <img
+            <Image
               alt="pic1"
               src="/firstpic.jpg"
               loading="lazy"
@@ -82,8 +85,8 @@ export default function Home() {
               decoding="async"
               data-nimg="1"
               className=" shadow-2xl shadow-black rounded-lg h-[300px] object-cover w-full "
-            ></img>
-            <img
+            />
+            <Image
               alt="pic2"
               src="/secondpic.jpg"
               loading="lazy"
@@ -92,8 +95,8 @@ export default function Home() {
               decoding="async"
               data-nimg="1"
               className=" shadow-2xl shadow-black rounded-lg h-[300px] object-cover w-full "
-            ></img>
-            <img
+            />
+            <Image
               alt="pic3"
               src="/thirdpic.jpg"
               loading="lazy"
@@ -102,11 +105,11 @@ export default function Home() {
               decoding="async"
               data-nimg="1"
               className=" shadow-2xl shadow-black rounded-lg h-[300px] object-cover w-full "
-            ></img>
+            />
           </div>
           <div className="mt-10 w-full">
           <div className="grid sm:grid-cols-2 grid-cols-2 gap-5 mt-10 m-3 sm:m-0">
-            <img
+            <Image
               alt="pic1"
               src="/sliderpic.jpg"
               loading="lazy"
@@ -115,8 +118,8 @@ export default function Home() {
               decoding="async"
               data-nimg="1"
               className=" shadow-2xl shadow-black rounded-lg h-[500px] object-cover w-full "
-            ></img>
-            <img
+            />
+            <Image
               alt="pic2"
               src="/sliderpic2.jpg"
               loading="lazy"
@@ -125,7 +128,7 @@ export default function Home() {
               decoding="async"
               data-nimg="1"
               className=" shadow-2xl shadow-black rounded-lg h-[500px] object-cover w-full "
-            ></img>
+            />
             </div>
           </div>
         </div>
@@ -135,30 +138,30 @@ export default function Home() {
       <div className="xl:w-[1300px] lg:w-[90%] w-[95%] m-auto mt-10 mb-10">
         <h1 className="lg:text-4xl sm:text-4xl text-2xl text-[#044E83] sm:text-left text-center text-main font-bold mt-10 ">Core Courses Sequence</h1>
       <div className="grid xl-lg:grid-cols-4 sm:grid-cols-4 grid-cols-1 xl-lg:gap-10 gap-5 mt-10 ">
-        <a href="/" className="hover:scale-105 duration-200 transition-all border-2 border-inherit rounded-lg">
+        <Link href="/" className="hover:scale-105 duration-200 transition-all border-2 border-inherit rounded-lg">
           <div className=" overflow-hidden h-fit  box_shadow rounded-lg flex flex-col justify-center items-center text-center text-zinc-600 text-lg font-bold ">
              <img src="img1.jpg" alt="programming fundamentals" width={450} height={300} className="object-cover w-full"/>
           </div>
           <div className="px-4 flex justify-center items-center h-[70px] text-[#52525B] font-bold">
             Programming Fundamentals
           </div>
-          </a>
-        <a href="/" className="hover:scale-105 duration-200 transition-all border-2 border-inherit rounded-lg">
+          </Link>
+        <Link href="/" className="hover:scale-105 duration-200 transition-all border-2 border-inherit rounded-lg">
           <div className=" overflow-hidden h-fit  box_shadow rounded-lg flex flex-col justify-center items-center text-center text-zinc-600 text-lg font-bold ">
              <img src="img2.jpg" alt="programming fundamentals" width={450} height={300} className="object-cover w-full"/>
           </div>
           <div className="px-4 flex justify-center items-center h-[70px] text-[#52525B] font-bold">
             Web2 Using NEXTJS
           </div>
-          </a>
-        <a href="/" className="hover:scale-105 duration-200 transition-all border-2 border-inherit rounded-lg">
+          </Link>
+        <Link href="/" className="hover:scale-105 duration-200 transition-all border-2 border-inherit rounded-lg">
           <div className=" overflow-hidden h-fit  box_shadow rounded-lg flex flex-col justify-center items-center text-center text-zinc-600 text-lg font-bold ">
              <img src="img3.jpg" alt="programming fundamentals" width={450} height={300} className="object-cover w-full"/>
           </div>
           <div className="px-4 flex justify-center items-center h-[70px] text-[#52525B] font-bold">
            Earn as You Learn
           </div>
-          </a>
+          </Link>
       
       </div>
       </div>
@@ -168,54 +171,54 @@ export default function Home() {
       <div className="xl:w-[1300px] lg:w-[90%] w-[95%] m-auto mt-20 mb-10">
         <h1 className="lg:text-4xl sm:text-4xl text-2xl text-[#044E83] sm:text-left text-center text-main font-bold mt-10 ">Advanced Courses</h1>
       <div className="grid xl-lg:grid-cols-4 sm:grid-cols-4 grid-cols-1 xl-lg:gap-10 gap-5 mt-10 ">
-        <a href="/" className="hover:scale-105 duration-200 transition-all border-2 border-inherit rounded-lg">
+        <Link href="/" className="hover:scale-105 duration-200 transition-all border-2 border-inherit rounded-lg">
           <div className=" overflow-hidden h-fit  box_shadow rounded-lg flex flex-col justify-center items-center text-center text-zinc-600 text-lg font-bold ">
-             <img src="Aiimg.jpg" alt="Ai" width={450} height={300} className="object-cover w-full"/>
+             <Image src="/Aiimg.jpg" alt="Ai" width={450} height={300} className="object-cover w-full"/>
           </div>
           <div className="px-4 flex justify-center items-center h-[70px] text-[#52525B] font-bold">
            Artificial Intellegence
           </div>
-          </a>
-        <a href="/" className="hover:scale-105 duration-200 transition-all border-2 border-inherit rounded-lg">
+          </Link>
+        <Link href="/" className="hover:scale-105 duration-200 transition-all border-2 border-inherit rounded-lg">
           <div className=" overflow-hidden h-fit  box_shadow rounded-lg flex flex-col justify-center items-center text-center text-zinc-600 text-lg font-bold ">
-             <img src="web3img.jpg" alt="Web3" width={450} height={300} className="object-cover w-full"/>
+             <Image src="/web3img.jpg" alt="Web3" width={450} height={300} className="object-cover w-full"/>
           </div>
           <div className="px-4 flex justify-center items-center h-[70px] text-[#52525B] font-bold">
             Web3 and Metaverce
           </div>
-          </a>
-        <a href="/" className="hover:scale-105 duration-200 transition-all border-2 border-inherit rounded-lg">
+          </Link>
+        <Link href="/" className="hover:scale-105 duration-200 transition-all border-2 border-inherit rounded-lg">
           <div className=" overflow-hidden h-fit  box_shadow rounded-lg flex flex-col justify-center items-center text-center text-zinc-600 text-lg font-bold ">
-             <img src="cloudnativeimg.jpg" alt="programming fundamentals" width={450} height={300} className="object-cover w-full"/>
+             <Image src="/cloudnativeimg.jpg" alt="programming fundamentals" width={450} height={300} className="object-cover w-full"/>
           </div>
           <div className="px-4 flex justify-center items-center h-[70px] text-[#52525B] font-bold">
            Cloud-Native Computing
           </div>
-          </a>
-        <a href="/" className="hover:scale-105 duration-200 transition-all border-2 border-inherit rounded-lg">
+          </Link>
+        <Link href="/" className="hover:scale-105 duration-200 transition-all border-2 border-inherit rounded-lg">
           <div className=" overflow-hidden h-fit  box_shadow rounded-lg flex flex-col justify-center items-center text-center text-zinc-600 text-lg font-bold ">
-             <img src="iOTimg.jpg" alt="programming fundamentals" width={450} height={300} className="object-cover w-full"/>
+             <Image src="/iOTimg.jpg" alt="programming fundamentals" width={450} height={300} className="object-cover w-full"/>
           </div>
           <div className="px-4 flex justify-center items-center h-[70px] text-[#52525B] font-bold">
           Ambient Computing and IoT
           </div>
-          </a>
-        <a href="/" className="hover:scale-105 duration-200 transition-all border-2 border-inherit rounded-lg">
+          </Link>
+        <Link href="/" className="hover:scale-105 duration-200 transition-all border-2 border-inherit rounded-lg">
           <div className=" overflow-hidden h-fit  box_shadow rounded-lg flex flex-col justify-center items-center text-center text-zinc-600 text-lg font-bold ">
-             <img src="biioimg.jpg" alt="programming fundamentals" width={450} height={300} className="object-cover w-full"/>
+             <Image src="/biioimg.jpg" alt="programming fundamentals" width={450} height={300} className="object-cover w-full"/>
           </div>
           <div className="px-4 flex justify-center items-center h-[70px] text-[#52525B] font-bold">
           Genomics and Bioinformatics
           </div>
-          </a>
-        <a href="/" className="hover:scale-105 duration-200 transition-all border-2 border-inherit rounded-lg">
+          </Link>
+        <Link href="/" className="hover:scale-105 duration-200 transition-all border-2 border-inherit rounded-lg">
           <div className=" overflow-hidden h-fit  box_shadow rounded-lg flex flex-col justify-center items-center text-center text-zinc-600 text-lg font-bold ">
-             <img src="networkimg.jpg" alt="programming fundamentals" width={450} height={300} className="object-cover w-full"/>
+             <Image src="/networkimg.jpg" alt="programming fundamentals" width={450} height={300} className="object-cover w-full"/>
           </div>
           <div className="px-4 flex justify-center items-center h-[70px] text-[#52525B] font-bold">
           Network Programmability and Automation
           </div>
-          </a>
+          </Link>
       
       </div>
       </div>

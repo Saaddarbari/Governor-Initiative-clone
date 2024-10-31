@@ -1,3 +1,4 @@
+import Link from 'next/link';
 export default function Footer() {
   return (
     <div className="mt-20 w-full bg-zinc-100 print:hidden">
@@ -6,35 +7,35 @@ export default function Footer() {
           <div className="text-zinc-800">
             <h1 className="text-xl font-bold">Core Courses</h1>
             <div className="flex flex-col gap-3 text-sm md:text-base mt-5">
-              <a href="/">Programming Fundamentals</a>
-              <a href="/">Web2 Using NextJS</a>
-              <a href="/">Earn as You Learn</a>
+              <Link href={'/'}>Programming Fundamentals</Link>
+              <Link href={'/'}>Web2 Using NextJS</Link>
+              <Link href={'/'}>Earn as You Learn</Link>
             </div>
           </div>
 
           <div className="text-zinc-800">
             <h1 className="text-xl font-bold">Advanced Courses</h1>
             <div className="flex flex-col gap-3 text-sm md:text-base mt-5">
-              <a href="/">Web 3 and Metaverse</a>
-              <a href="/">Cloud-Native Computing</a>
-              <a href="/">Artificial Intelligence (AI) and Deep Learning</a>
-              <a href="/">Ambient Computing and IoT</a>
-              <a href="/">Genomics and Bioinformatics</a>
-              <a href="/">Network Programmability and Automation</a>
+            <Link href={'/'}>Web 3 and Metaverse</Link>
+              <Link href={'/'}>Cloud-Native Computing</Link>
+              <Link href={'/'}>Artificial Intelligence (AI) and Deep Learning</Link>
+              <Link href={'/'}>Ambient Computing and IoT</Link>
+              <Link href={'/'}>Genomics and Bioinformatics</Link>
+              <Link href={'/'}>Network Programmability and Automation</Link>
             </div>
           </div>
           <div className="text-zinc-800">
             <h1 className="text-xl font-bold">Social Links</h1>
             <div className="flex gap-3 md:text-sm my-5">
-                <a href="/"><button className="h-[25px] w-[25px] rounded-full text-white bg-blue-800">f</button></a>
-                <a href="/"><button className="h-[25px] w-[25px] rounded-full text-white bg-red-800">tube</button></a>
-                <a href="/"><button className="h-[25px] w-[25px] rounded-full text-white bg-blue-500">twitter</button></a>
-                <a href="/"><button className="h-[25px] w-[25px] rounded-full text-white bg-pink-800">insta</button></a>
-                <a href="/"><button className="h-[25px] w-[25px] rounded-full text-white bg-black text-sm">t</button></a>
+                <Link href={'/'}><button className="h-[25px] w-[25px] rounded-full text-white bg-blue-800">f</button></Link>
+                <Link href={'/'}><button className="h-[25px] w-[25px] rounded-full text-white bg-red-800">tube</button></Link>
+                <Link href={'/'}><button className="h-[25px] w-[25px] rounded-full text-white bg-blue-500">twitter</button></Link>
+                <Link href={'/'}><button className="h-[25px] w-[25px] rounded-full text-white bg-pink-800">insta</button></Link>
+                <Link href={'/'}><button className="h-[25px] w-[25px] rounded-full text-white bg-black text-sm">t</button></Link>
             </div>
             <div className="flex gap-1">
                 <img src="/email.jpg" alt="emaillogo" width={15} height={15}/>
-                <a href="/">education@governorsindh.com</a>
+                <Link href={'/'}>education@governorsindh.com</Link>
             </div>
           </div>
         </div>
