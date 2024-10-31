@@ -8,12 +8,14 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'bg': "url('/bghouse.png')",
+      },
       colors: {
-        background: "var(--background)",
         foreground: "var(--foreground)",
       },
     },
   },
   plugins: [],
-};
+}
 export default config;
